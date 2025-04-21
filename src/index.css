@@ -95,7 +95,47 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .subtle-hover {
+    @apply transition-all duration-300 hover:shadow-md;
+  }
+
+  .highlight-text {
+    @apply text-scholar-blue font-medium;
+  }
+
+  .card-gradient {
+    @apply bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900;
   }
 }
