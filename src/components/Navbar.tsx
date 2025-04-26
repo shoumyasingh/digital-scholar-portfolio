@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="font-serif text-xl font-bold text-scholar-navy dark:text-white">
-              Dr. Jane Doe
+              Dr. Deepak Kumar
             </Link>
           </div>
           
