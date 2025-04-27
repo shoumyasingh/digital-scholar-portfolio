@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="font-serif text-xl font-bold text-scholar-navy dark:text-white">
-              Dr. Jane Doe
+              Dr. Deepak Kumar
             </Link>
             <p className="mt-2 text-sm text-scholar-gray dark:text-gray-400">
               Researcher & Software Engineer
@@ -56,7 +56,7 @@ export default function Footer() {
         
         <div className="mt-8 border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-scholar-gray dark:text-gray-400">
-            &copy; {currentYear} Dr. Jane Doe. All rights reserved.
+            &copy; {currentYear} Dr. Deepak Kumar. All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">
