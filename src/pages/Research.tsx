@@ -16,7 +16,6 @@ export default function Research() {
     const hash = window.location.hash;
     if (hash) {
       const id = hash.substring(1);
-      if (id === 'publications') setActiveTab('publications');
       if (id === 'conferences') setActiveTab('conferences');
       if (id === 'research-publications') setActiveTab('research-publications');
       if (id === 'articles') setActiveTab('articles');
@@ -633,16 +632,6 @@ export default function Research() {
               Research Interests
             </Button>
             <Button
-              variant={activeTab === 'publications' ? 'default' : 'outline'}
-              onClick={() => {
-                setActiveTab('publications');
-                document.getElementById('publications')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className={activeTab === 'publications' ? 'bg-blue-600 hover:bg-blue-700' : 'border-slate-200 dark:border-slate-700'}
-            >
-              Publications
-            </Button>
-            <Button
               variant={activeTab === 'conferences' ? 'default' : 'outline'}
               onClick={() => {
                 setActiveTab('conferences');
@@ -741,60 +730,7 @@ export default function Research() {
             </div>
           </div>
           
-          {/* Publications */}
-          <div id="publications" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="flex items-center mb-8">
-              <div className="bg-purple-100 dark:bg-purple-900/30 rounded-lg p-2 mr-4">
-                <FileText className="h-6 w-6 text-purple-600 dark:text-purple-400" />
-              </div>
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-                Publications
-              </h2>
-            </div>
-            
-            <div className="space-y-8">
-              {publications.map((pub, index) => (
-                <div 
-                  key={index}
-                  className="group bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all"
-                >
-                  <div className="h-2 w-full bg-gradient-to-r from-purple-500 to-indigo-500"></div>
-                  <div className="p-6">
-                    <div className="flex flex-col md:flex-row md:items-start justify-between">
-                      <div className="flex-grow">
-                        <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-                          {pub.title}
-                        </h3>
-                        <p className="italic text-slate-600 dark:text-slate-300 mb-2">
-                          {pub.authors}
-                        </p>
-                        <div className="flex items-center mb-6">
-                          <Badge className="bg-indigo-50 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400 mr-3">
-                            {pub.year}
-                          </Badge>
-                          <span className="text-slate-600 dark:text-slate-300 font-medium">{pub.journal}</span>
-                        </div>
-                      </div>
-                      <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
-                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-700">
-                          <a href={pub.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View
-                          </a>
-                        </Button>
-                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-700">
-                          <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                            <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
-                          </a>
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Conference Participation */}
+          {/* Conference Paper */}
           <div id="conferences" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center mb-8">
               <div className="bg-green-100 dark:bg-green-900/30 rounded-lg p-2 mr-4">
