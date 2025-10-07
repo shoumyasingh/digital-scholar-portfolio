@@ -21,6 +21,7 @@ export default function Research() {
       if (id === 'articles') setActiveTab('articles');
       if (id === 'book-chapters') setActiveTab('book-chapters');
       if (id === 'preprints') setActiveTab('preprints');
+      if (id === 'thesis') setActiveTab('thesis');
       
       // Scroll to element with delay for animation
       setTimeout(() => {
@@ -677,9 +678,19 @@ export default function Research() {
                 setActiveTab('preprints');
                 document.getElementById('preprints')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className={activeTab === 'preprints' ? 'bg-blue-600 hover:bg-blue-700' : 'border-slate-200 dark:border-slate-700'}
+              className={activeTab === 'preprints' ? 'bg-cyan-600 hover:bg-cyan-700' : 'border-slate-200 dark:border-slate-700'}
             >
               Preprint
+            </Button>
+            <Button
+              variant={activeTab === 'thesis' ? 'default' : 'outline'}
+              onClick={() => {
+                setActiveTab('thesis');
+                document.getElementById('thesis')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className={activeTab === 'thesis' ? 'bg-amber-600 hover:bg-amber-700' : 'border-slate-200 dark:border-slate-700'}
+            >
+              Thesis
             </Button>
           </div>
         </div>
@@ -934,7 +945,7 @@ export default function Research() {
           </div>
 
           {/* Preprints */}
-          <div id="preprints" className={`scroll-mt-24 transition-all duration-700 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div id="preprints" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center mb-8">
               <div className="bg-amber-100 dark:bg-amber-900/30 rounded-lg p-2 mr-4">
                 <FileCode className="h-6 w-6 text-amber-600 dark:text-amber-400" />
@@ -973,6 +984,59 @@ export default function Research() {
                           </a>
                         </Button>
                         <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-amber-300 dark:hover:border-amber-700">
+                          <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Thesis */}
+          <div id="thesis" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-1300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="flex items-center mb-8">
+              <div className="bg-orange-100 dark:bg-orange-900/30 rounded-lg p-2 mr-4">
+                <BookOpen className="h-6 w-6 text-orange-600 dark:text-orange-400" />
+              </div>
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                Thesis
+              </h2>
+            </div>
+            
+            <div className="space-y-8">
+              {publications.filter(pub => pub.journal === "Thesis").map((pub, index) => (
+                <div 
+                  key={index}
+                  className="group bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all"
+                >
+                  <div className="h-2 w-full bg-gradient-to-r from-orange-500 to-red-500"></div>
+                  <div className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-start justify-between">
+                      <div className="flex-grow">
+                        <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
+                          {pub.title}
+                        </h3>
+                        <p className="italic text-slate-600 dark:text-slate-300 mb-2">
+                          {pub.authors}
+                        </p>
+                        <div className="flex items-center mb-6">
+                          <Badge className="bg-orange-50 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400 mr-3">
+                            {pub.year}
+                          </Badge>
+                          <span className="text-slate-600 dark:text-slate-300 font-medium">{pub.journal}</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-orange-300 dark:hover:border-orange-700">
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View
+                          </a>
+                        </Button>
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-orange-300 dark:hover:border-orange-700">
                           <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
                             <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
                           </a>
