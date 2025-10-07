@@ -15,7 +15,7 @@ export default function ResearchPreview() {
     {
       title: "Intelligent Systems for IoT Networks",
       description: "Exploring machine learning approaches for optimizing IoT network performance and security.",
-      link: "/research#intelligent-systems",
+      link: "/research/intelligent-systems",
       icon: Network,
       category: "IoT",
       progress: 85
@@ -23,7 +23,7 @@ export default function ResearchPreview() {
     {
       title: "Adaptive User Interfaces",
       description: "Research on context-aware interfaces that adapt to user preferences and environmental factors.",
-      link: "/research#adaptive-ui",
+      link: "/research/adaptive-ui",
       icon: Lightbulb,
       category: "HCI",
       progress: 70
@@ -31,7 +31,7 @@ export default function ResearchPreview() {
     {
       title: "Distributed Computing Paradigms",
       description: "Investigating novel approaches to distributed computing in heterogeneous environments.",
-      link: "/research#distributed-computing",
+      link: "/research/distributed-computing",
       icon: Braces,
       category: "Systems",
       progress: 60

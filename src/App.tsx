@@ -11,6 +11,9 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import IntelligentSystems from "./pages/research/IntelligentSystems";
+import AdaptiveUI from "./pages/research/AdaptiveUI";
+import DistributedComputing from "./pages/research/DistributedComputing";
 
 // Set up dark mode on initial load
 const initializeDarkMode = () => {
@@ -53,6 +56,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/research" element={<Research />} />
+            <Route path="/research/intelligent-systems" element={<IntelligentSystems />} />
+            <Route path="/research/adaptive-ui" element={<AdaptiveUI />} />
+            <Route path="/research/distributed-computing" element={<DistributedComputing />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
