@@ -1,81 +1,38 @@
 import { useState, useEffect } from "react";
 import { Calendar, ArrowLeft, User, Tag, Clock, Share2, Bookmark, ChevronLeft, ChevronRight } from "lucide-react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Layout from "@/components/Layout";
+import { getBlogPostBySlug } from "@/data/blogPosts";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
+  
+  const post = getBlogPostBySlug(slug || "");
   
   useEffect(() => {
     setIsVisible(true);
   }, []);
   
-  // Sample blog data - in a real app this would be fetched from an API or CMS
-  const blog = {
-    title: "Advancements in Natural Language Processing",
-    date: "April 10, 2023",
-    author: "Dr. Deepak Kumar",
-    readTime: "8 min read",
-    category: "Artificial Intelligence",
-    content: `
-      <p>Recent advances in Natural Language Processing (NLP) have transformed how we interact with machines and process human language. This post explores these developments and their implications for research and industry applications.</p>
-      
-      <h2 id="transformer-architectures">Transformer Architectures</h2>
-      <p>The introduction of transformer-based models like BERT, GPT, and T5 has revolutionized NLP tasks across the board. These models use attention mechanisms to understand context in ways previous recurrent neural networks couldn't match.</p>
-      
-      <p>Key benefits include:</p>
-      <ul>
-        <li>Better understanding of long-range dependencies in text</li>
-        <li>Improved performance on a wide range of language tasks</li>
-        <li>Ability to transfer knowledge across domains and languages</li>
-      </ul>
-      
-      <h2 id="practical-applications">Practical Applications</h2>
-      <p>These advancements have enabled new applications in:</p>
-      <ul>
-        <li>Automated content generation</li>
-        <li>More accurate machine translation</li>
-        <li>Better sentiment analysis for customer feedback</li>
-        <li>Improved question-answering systems</li>
-      </ul>
-      
-      <h2 id="ethical-considerations">Ethical Considerations</h2>
-      <p>With great power comes great responsibility. NLP researchers and practitioners must consider the ethical implications of these technologies, including:</p>
-      <ul>
-        <li>Potential for bias in language models</li>
-        <li>Privacy concerns with text analysis</li>
-        <li>Potential misuse of text generation capabilities</li>
-      </ul>
-      
-      <h2 id="future-directions">Future Directions</h2>
-      <p>Looking forward, we can expect continued advancements in:</p>
-      <ul>
-        <li>More efficient models that require less computing power</li>
-        <li>Better multilingual capabilities</li>
-        <li>Improved grounding of language in real-world contexts</li>
-        <li>Tighter integration with other AI disciplines like computer vision</li>
-      </ul>
-      
-      <p>These developments will continue to push the boundaries of what's possible with machine understanding of human language.</p>
-    `,
-  };
-
-  // Sample related posts
-  const relatedPosts = [
-    {
-      title: "The Future of Distributed Computing",
-      slug: "future-of-distributed-computing",
-      date: "March 5, 2023"
-    },
-    {
-      title: "Ethical Considerations in AI Development",
-      slug: "ethical-considerations-ai",
-      date: "February 12, 2023"
-    }
-  ];
+  if (!post) {
+    return (
+      <Layout>
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Blog Post Not Found</h1>
+            <p className="text-slate-600 dark:text-slate-400 mb-8">The blog post you're looking for doesn't exist.</p>
+            <Button onClick={() => navigate("/blog")}>
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Blog
+            </Button>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
 
   return (
     <Layout>
@@ -91,20 +48,18 @@ export default function BlogPost() {
         
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <Button variant="outline" asChild className="mb-8 group border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 shadow-sm">
-              <Link to="/blog" className="flex items-center">
-                <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-                Back to Blog
-              </Link>
+            <Button variant="outline" onClick={() => navigate("/blog")} className="mb-8 group border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 shadow-sm">
+              <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+              Back to Blog
             </Button>
 
             <div className="mb-8">
               <Badge variant="outline" className="mb-4 px-3 py-1 border-blue-200 dark:border-blue-700 text-blue-600 dark:text-blue-400 bg-white/80 dark:bg-slate-800/80">
-                {blog.category}
+                {post.category}
               </Badge>
               
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-                {blog.title}
+                {post.title}
               </h1>
               
               <div className="flex flex-wrap items-center gap-6 text-slate-600 dark:text-slate-300 text-sm">
@@ -112,21 +67,21 @@ export default function BlogPost() {
                   <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mr-2">
                     <User className="h-4 w-4 text-blue-600 dark:text-blue-400" /> 
                   </div>
-                  {blog.author}
+                  {post.author}
                 </div>
                 
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center mr-2">
                     <Calendar className="h-4 w-4 text-indigo-600 dark:text-indigo-400" /> 
                   </div>
-                  {blog.date}
+                  {post.date}
                 </div>
                 
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mr-2">
                     <Clock className="h-4 w-4 text-purple-600 dark:text-purple-400" /> 
                   </div>
-                  {blog.readTime}
+                  {post.readTime}
                 </div>
               </div>
             </div>
@@ -150,7 +105,7 @@ export default function BlogPost() {
                   prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-10 prose-h2:mb-4
                   prose-ul:my-4 prose-li:my-1
                   prose-img:rounded-lg"
-                dangerouslySetInnerHTML={{ __html: blog.content }}
+                dangerouslySetInnerHTML={{ __html: post.content }}
               />
             </div>
             
@@ -166,7 +121,7 @@ export default function BlogPost() {
               </div>
               
               <div className="text-sm text-slate-500 dark:text-slate-400">
-                Published on {blog.date}
+                Published on {post.date}
               </div>
             </div>
             
@@ -175,17 +130,17 @@ export default function BlogPost() {
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">Related Articles</h3>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {relatedPosts.map((post, index) => (
+                {post.relatedPosts.map((relatedPost, index) => (
                   <Link 
                     key={index} 
-                    to={`/blog/${post.slug}`}
+                    to={`/blog/${relatedPost.slug}`}
                     className="group bg-white dark:bg-slate-800/50 rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm p-5 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
                   >
                     <div className="text-xs text-slate-500 dark:text-slate-400 mb-2">
-                      {post.date}
+                      {relatedPost.date}
                     </div>
                     <h4 className="text-base font-medium text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                      {post.title}
+                      {relatedPost.title}
                     </h4>
                   </Link>
                 ))}
@@ -250,7 +205,7 @@ export default function BlogPost() {
                   </div>
                   <div>
                     <div className="font-medium text-slate-900 dark:text-white">
-                      {blog.author}
+                      {post.author}
                     </div>
                     <div className="text-xs text-slate-500 dark:text-slate-400">
                       AI Researcher & Writer
