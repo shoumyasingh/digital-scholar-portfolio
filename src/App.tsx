@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import Research from "./pages/Research";
-import Projects from "./pages/Projects";
 import CV from "./pages/CV";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
@@ -54,7 +53,6 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/research" element={<Research />} />
-            <Route path="/projects" element={<Projects />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
