@@ -54,11 +54,11 @@ export default function Hero() {
               </div>
               
               <h1 className="font-serif text-5xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight tracking-tight">
-                Dr. Deepak Kumar
+                Deepak Kumar
               </h1>
               
               <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
-                Exploring the intersection of information technology, artificial intelligence, and software engineering. My research focuses on developing innovative solutions to complex computational problems.
+                Results-driven Data Engineer with PhD in Information Technology and over 8 years of experience. Specializing in data platforms, big data technologies, ETL processes, and cloud computing across diverse domains including social media, transportation, banking, and e-commerce.
               </p>
               
               <div className="pt-4 flex flex-wrap items-center gap-6">
@@ -91,16 +91,16 @@ export default function Hero() {
               
               <div className="pt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="flex flex-col border border-slate-200 dark:border-slate-800 rounded-lg p-3 hover:bg-slate-50 dark:hover:bg-slate-900/50 transition-colors">
+                  <span className="text-sm text-slate-500 dark:text-slate-400">Experience</span>
+                  <span className="text-2xl font-bold text-slate-900 dark:text-white">8+ Years</span>
+                </div>
+                <div className="flex flex-col border border-slate-200 dark:border-slate-800 rounded-lg p-3 hover:bg-slate-50 dark:hover:bg-slate-900/50 transition-colors">
                   <span className="text-sm text-slate-500 dark:text-slate-400">Publications</span>
-                  <span className="text-2xl font-bold text-slate-900 dark:text-white">35+</span>
+                  <span className="text-2xl font-bold text-slate-900 dark:text-white">5+</span>
                 </div>
                 <div className="flex flex-col border border-slate-200 dark:border-slate-800 rounded-lg p-3 hover:bg-slate-50 dark:hover:bg-slate-900/50 transition-colors">
-                  <span className="text-sm text-slate-500 dark:text-slate-400">Citations</span>
-                  <span className="text-2xl font-bold text-slate-900 dark:text-white">265+</span>
-                </div>
-                <div className="flex flex-col border border-slate-200 dark:border-slate-800 rounded-lg p-3 hover:bg-slate-50 dark:hover:bg-slate-900/50 transition-colors">
-                  <span className="text-sm text-slate-500 dark:text-slate-400">Projects</span>
-                  <span className="text-2xl font-bold text-slate-900 dark:text-white">10+</span>
+                  <span className="text-sm text-slate-500 dark:text-slate-400">Companies</span>
+                  <span className="text-2xl font-bold text-slate-900 dark:text-white">Meta, Lyft</span>
                 </div>
               </div>
             </div>
@@ -113,8 +113,8 @@ export default function Hero() {
               
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-white dark:bg-slate-900">
                 <img 
-                  src="/public/D-photo.jpeg" 
-                  alt="Dr. Deepak Kumar" 
+                  src="/D-photo.jpeg" 
+                  alt="Deepak Kumar" 
                   className="w-full h-full object-cover"
                 />
                 
@@ -135,7 +135,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <h3 className="text-sm font-medium text-slate-900 dark:text-white">Latest Publication</h3>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">ML for Complex Systems</p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">DDoS Attack Detection in SDN-IoT</p>
                   </div>
                 </div>
                 <div className="mt-3 flex justify-end">

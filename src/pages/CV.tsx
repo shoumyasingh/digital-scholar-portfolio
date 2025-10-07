@@ -33,9 +33,14 @@ export default function CV() {
           </h1>
           
           <div className="flex justify-center">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all group">
-              <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              Download CV (PDF)
+            <Button 
+              asChild
+              className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all group"
+            >
+              <a href="/resume_deepak_kumar.pdf" download>
+                <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                Download CV (PDF)
+              </a>
             </Button>
           </div>
         </div>
@@ -62,25 +67,25 @@ export default function CV() {
                   <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        Ph.D. in Information Technology
+                        Doctor of Philosophy in Information Technology
                       </h3>
                       <div className="flex items-center mt-2">
                         <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
                         <p className="text-slate-700 dark:text-slate-300 font-medium">
-                          Stanford University
+                          University of the Cumberlands, Williamsburg, United States
                         </p>
                       </div>
                     </div>
                     <div className="mt-2 md:mt-0 flex items-center bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-sm px-3 py-1 rounded-full">
                       <Calendar className="h-3.5 w-3.5 mr-1" />
-                      2017 - 2021
+                      Jan 2018 - Dec 2022
                     </div>
                   </div>
                   <p className="mt-3 text-slate-600 dark:text-slate-300">
-                    Dissertation: "Adaptive Algorithms for Distributed Computing in IoT Networks"
+                    GPA: 3.7/4.0 • Completed 83 credits related to Information Technology
                   </p>
                   <p className="text-slate-600 dark:text-slate-300">
-                    Advisor: Prof. Michael Johnson
+                    Dissertation: "Factor related to adoption of IoT in Smart Home"
                   </p>
                 </div>
               </div>
@@ -91,48 +96,22 @@ export default function CV() {
                   <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        M.S. in Computer Science
+                        Master of Science in Computer Science
                       </h3>
                       <div className="flex items-center mt-2">
                         <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
                         <p className="text-slate-700 dark:text-slate-300 font-medium">
-                          Massachusetts Institute of Technology
+                          San Francisco Bay University, Fremont, United States
                         </p>
                       </div>
                     </div>
                     <div className="mt-2 md:mt-0 flex items-center bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 text-sm px-3 py-1 rounded-full">
                       <Calendar className="h-3.5 w-3.5 mr-1" />
-                      2015 - 2017
+                      May 2015 - Dec 2016
                     </div>
                   </div>
                   <p className="mt-3 text-slate-600 dark:text-slate-300">
-                    Thesis: "Machine Learning Approaches to Network Security"
-                  </p>
-                </div>
-              </div>
-              
-              <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden">
-                <div className="h-2 w-full bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                <div className="p-6">
-                  <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        B.S. in Computer Science
-                      </h3>
-                      <div className="flex items-center mt-2">
-                        <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
-                        <p className="text-slate-700 dark:text-slate-300 font-medium">
-                          University of California, Berkeley
-                        </p>
-                      </div>
-                    </div>
-                    <div className="mt-2 md:mt-0 flex items-center bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 text-sm px-3 py-1 rounded-full">
-                      <Calendar className="h-3.5 w-3.5 mr-1" />
-                      2011 - 2015
-                    </div>
-                  </div>
-                  <p className="mt-3 text-slate-600 dark:text-slate-300">
-                    Minor in Mathematics
+                    GPA: 3.8/4.0 • Completed 36 credits related to Computer Science
                   </p>
                 </div>
               </div>
@@ -157,36 +136,44 @@ export default function CV() {
                   <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        Lead Software Engineer
+                        Data Engineer
                       </h3>
                       <div className="flex items-center mt-2">
                         <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
                         <p className="text-slate-700 dark:text-slate-300 font-medium">
-                          Google AI Research
+                          Meta (Contract) - Menlo Park, CA
                         </p>
                       </div>
                     </div>
                     <div className="mt-2 md:mt-0 flex items-center bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 text-sm px-3 py-1 rounded-full">
                       <Calendar className="h-3.5 w-3.5 mr-1" />
-                      2021 - Present
+                      Oct 2021 - Present
                     </div>
                   </div>
                   <ul className="mt-3 text-slate-600 dark:text-slate-300 space-y-2">
                     <li className="flex items-start">
                       <span className="text-green-500 dark:text-green-400 mr-2">•</span>
-                      <span>Lead a team of 8 engineers developing AI-powered tools for software analysis</span>
+                      <span>Implemented data processing pipelines to clean, transform, and structure raw data, efficiently migrating a petabyte-scale dataset</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-500 dark:text-green-400 mr-2">•</span>
-                      <span>Design and implement distributed systems for large-scale machine learning pipelines</span>
+                      <span>Spearheaded compliance initiatives, focusing on identifying violence and unethical content within user videos and reels</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-500 dark:text-green-400 mr-2">•</span>
-                      <span>Collaborate with research scientists to translate academic findings into practical applications</span>
+                      <span>Created insightful dashboards utilizing Tableau and Unidash for stakeholders</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-500 dark:text-green-400 mr-2">•</span>
-                      <span>Publish research papers in top-tier conferences and journals</span>
+                      <span>Developed DAGs using Python, Java, SQL, APIs, Presto, Spark, and machine learning modules</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-500 dark:text-green-400 mr-2">•</span>
+                      <span>Developed framework to detect fraud on Marketplace platform using Spark, TigerGraph Db, Kafka</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-500 dark:text-green-400 mr-2">•</span>
+                      <span>Performed A/B testing, experimentation, curated & provided training data for LLM and other AI models</span>
                     </li>
                   </ul>
                 </div>
@@ -198,36 +185,32 @@ export default function CV() {
                   <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        Software Engineer
+                        Data Engineer
                       </h3>
                       <div className="flex items-center mt-2">
                         <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
                         <p className="text-slate-700 dark:text-slate-300 font-medium">
-                          Microsoft Research
+                          i2Data Systems (Client: Lyft) - San Francisco, CA
                         </p>
                       </div>
                     </div>
                     <div className="mt-2 md:mt-0 flex items-center bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 text-sm px-3 py-1 rounded-full">
                       <Calendar className="h-3.5 w-3.5 mr-1" />
-                      2017 - 2021
+                      Mar 2020 - Oct 2021
                     </div>
                   </div>
                   <ul className="mt-3 text-slate-600 dark:text-slate-300 space-y-2">
                     <li className="flex items-start">
                       <span className="text-cyan-500 dark:text-cyan-400 mr-2">•</span>
-                      <span>Developed machine learning algorithms for IoT security applications</span>
+                      <span>Conducted analysis of business requirements for booking, rides, and daily spend reporting for Accounting Team</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-cyan-500 dark:text-cyan-400 mr-2">•</span>
-                      <span>Designed and implemented a distributed database system for edge computing</span>
+                      <span>Developed comprehensive data ingestion framework using Apache Airflow, Glue, EMR, Redshift, Athena, and Lambda on AWS</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-cyan-500 dark:text-cyan-400 mr-2">•</span>
-                      <span>Contributed to open-source projects in the distributed systems space</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-cyan-500 dark:text-cyan-400 mr-2">•</span>
-                      <span>Mentored junior engineers and interns</span>
+                      <span>Developed business reports & dashboard with KPIs using MODE and Tableau for near real-time data tracking</span>
                     </li>
                   </ul>
                 </div>
@@ -239,28 +222,110 @@ export default function CV() {
                   <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        Software Engineering Intern
+                        Data Engineer
                       </h3>
                       <div className="flex items-center mt-2">
                         <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
                         <p className="text-slate-700 dark:text-slate-300 font-medium">
-                          IBM Research
+                          Facebook (Contract) - Menlo Park, CA
                         </p>
                       </div>
                     </div>
                     <div className="mt-2 md:mt-0 flex items-center bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-sm px-3 py-1 rounded-full">
                       <Calendar className="h-3.5 w-3.5 mr-1" />
-                      Summer 2016
+                      Nov 2018 - Dec 2019
                     </div>
                   </div>
                   <ul className="mt-3 text-slate-600 dark:text-slate-300 space-y-2">
                     <li className="flex items-start">
                       <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
-                      <span>Developed algorithms for anomaly detection in network traffic</span>
+                      <span>Worked for video and feed data engineering team to develop & maintain efficient ETL process using big data stacks</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
-                      <span>Implemented machine learning models for security applications</span>
+                      <span>Developed dashboard, executed data migration, compliances implementation and ad revenue calculation</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+                      <span>Involved in backfill, migration, data infra resources real-time monitoring and on-call resources for Global Ops team</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden">
+                <div className="h-2 w-full bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                <div className="p-6">
+                  <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                        Hadoop Developer
+                      </h3>
+                      <div className="flex items-center mt-2">
+                        <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
+                        <p className="text-slate-700 dark:text-slate-300 font-medium">
+                          Pro-Teck Consulting (Wells Fargo) - Fremont, CA
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-2 md:mt-0 flex items-center bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 text-sm px-3 py-1 rounded-full">
+                      <Calendar className="h-3.5 w-3.5 mr-1" />
+                      Mar 2016 - Dec 2017
+                    </div>
+                  </div>
+                  <ul className="mt-3 text-slate-600 dark:text-slate-300 space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-purple-500 dark:text-purple-400 mr-2">•</span>
+                      <span>Designed and implemented data models, schemas, and storage solutions optimized for Hadoop environments</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-500 dark:text-purple-400 mr-2">•</span>
+                      <span>Created efficient and reliable code to process and analyze data, ensuring quality, integrity, and security standards</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-500 dark:text-purple-400 mr-2">•</span>
+                      <span>Collaborated with business stakeholders to translate requirements into technical solutions using Agile</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden">
+                <div className="h-2 w-full bg-gradient-to-r from-orange-500 to-red-500"></div>
+                <div className="p-6">
+                  <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                        Associate IT Consultant
+                      </h3>
+                      <div className="flex items-center mt-2">
+                        <Building className="h-4 w-4 text-slate-500 dark:text-slate-400 mr-2" />
+                        <p className="text-slate-700 dark:text-slate-300 font-medium">
+                          ITC Infotech Ltd. - Bengaluru, India
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-2 md:mt-0 flex items-center bg-orange-50 dark:bg-orange-900/20 text-orange-600 dark:text-orange-400 text-sm px-3 py-1 rounded-full">
+                      <Calendar className="h-3.5 w-3.5 mr-1" />
+                      Aug 2011 - Apr 2015
+                    </div>
+                  </div>
+                  <ul className="mt-3 text-slate-600 dark:text-slate-300 space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-orange-500 dark:text-orange-400 mr-2">•</span>
+                      <span>Used Java, JSP, and Servlets framework for creating web-based applications</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-500 dark:text-orange-400 mr-2">•</span>
+                      <span>Developed UI using HTML, JavaScript, and JSP, and Business Logic using Business Objects, XML, and JDBC</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-500 dark:text-orange-400 mr-2">•</span>
+                      <span>Used MAVEN to build the project into WAR and EAR files and Clear Case for version controlling</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-500 dark:text-orange-400 mr-2">•</span>
+                      <span>Developed testing framework using Java and Selenium for regression & cross platform testing</span>
                     </li>
                   </ul>
                 </div>
@@ -284,32 +349,16 @@ export default function CV() {
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center">
                     <div className="h-2 w-2 rounded-full bg-purple-500 mr-2"></div>
-                    Programming Languages
+                    Programming
                   </h3>
                   <ul className="text-slate-600 dark:text-slate-300 space-y-2">
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-purple-200 dark:bg-purple-700 mr-2"></span>
-                      <span>Python <span className="text-purple-500 dark:text-purple-400">(Expert)</span></span>
+                      <span>Python</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-purple-200 dark:bg-purple-700 mr-2"></span>
-                      <span>Rust <span className="text-purple-500 dark:text-purple-400">(Advanced)</span></span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-purple-200 dark:bg-purple-700 mr-2"></span>
-                      <span>C/C++ <span className="text-purple-500 dark:text-purple-400">(Advanced)</span></span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-purple-200 dark:bg-purple-700 mr-2"></span>
-                      <span>JavaScript/TypeScript <span className="text-purple-500 dark:text-purple-400">(Advanced)</span></span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-purple-200 dark:bg-purple-700 mr-2"></span>
-                      <span>Java <span className="text-purple-500 dark:text-purple-400">(Intermediate)</span></span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-purple-200 dark:bg-purple-700 mr-2"></span>
-                      <span>Go <span className="text-purple-500 dark:text-purple-400">(Intermediate)</span></span>
+                      <span>Java</span>
                     </li>
                   </ul>
                 </div>
@@ -317,32 +366,20 @@ export default function CV() {
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center">
                     <div className="h-2 w-2 rounded-full bg-blue-500 mr-2"></div>
-                    Frameworks & Technologies
+                    Databases
                   </h3>
                   <ul className="text-slate-600 dark:text-slate-300 space-y-2">
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-blue-200 dark:bg-blue-700 mr-2"></span>
-                      <span>TensorFlow/PyTorch</span>
+                      <span>MySQL, PostgreSQL</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-blue-200 dark:bg-blue-700 mr-2"></span>
-                      <span>Distributed Systems (Kafka, Kubernetes)</span>
+                      <span>Oracle, MongoDB</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-blue-200 dark:bg-blue-700 mr-2"></span>
-                      <span>Databases (SQL, NoSQL, Time-series)</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-blue-200 dark:bg-blue-700 mr-2"></span>
-                      <span>Cloud Platforms (AWS, GCP, Azure)</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-blue-200 dark:bg-blue-700 mr-2"></span>
-                      <span>Web Development (React, Node.js)</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-blue-200 dark:bg-blue-700 mr-2"></span>
-                      <span>IoT Protocols & Standards</span>
+                      <span>Hive</span>
                     </li>
                   </ul>
                 </div>
@@ -350,28 +387,24 @@ export default function CV() {
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center">
                     <div className="h-2 w-2 rounded-full bg-green-500 mr-2"></div>
-                    Research Areas
+                    Big Data & Cloud
                   </h3>
                   <ul className="text-slate-600 dark:text-slate-300 space-y-2">
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-green-200 dark:bg-green-700 mr-2"></span>
-                      <span>Machine Learning</span>
+                      <span>AWS, GCP, Docker</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-green-200 dark:bg-green-700 mr-2"></span>
-                      <span>Natural Language Processing</span>
+                      <span>Hadoop, Spark, Kafka</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-green-200 dark:bg-green-700 mr-2"></span>
-                      <span>Distributed Computing</span>
+                      <span>Redshift, Presto</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-green-200 dark:bg-green-700 mr-2"></span>
-                      <span>Human-Computer Interaction</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-green-200 dark:bg-green-700 mr-2"></span>
-                      <span>IoT Security</span>
+                      <span>Airflow, Informatica</span>
                     </li>
                   </ul>
                 </div>
@@ -379,28 +412,20 @@ export default function CV() {
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center">
                     <div className="h-2 w-2 rounded-full bg-orange-500 mr-2"></div>
-                    Soft Skills
+                    Testing & Web
                   </h3>
                   <ul className="text-slate-600 dark:text-slate-300 space-y-2">
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-orange-200 dark:bg-orange-700 mr-2"></span>
-                      <span>Team Leadership</span>
+                      <span>Selenium, Cucumber</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-orange-200 dark:bg-orange-700 mr-2"></span>
-                      <span>Technical Writing</span>
+                      <span>TestNG, Pytest</span>
                     </li>
                     <li className="flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-orange-200 dark:bg-orange-700 mr-2"></span>
-                      <span>Public Speaking</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-orange-200 dark:bg-orange-700 mr-2"></span>
-                      <span>Project Management</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="inline-block w-2 h-2 rounded-full bg-orange-200 dark:bg-orange-700 mr-2"></span>
-                      <span>Mentoring</span>
+                      <span>HTML, CSS, NodeJS</span>
                     </li>
                   </ul>
                 </div>
@@ -408,72 +433,85 @@ export default function CV() {
             </div>
           </div>
           
-          {/* Awards & Honors */}
-          <div className={`transition-all duration-700 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          {/* Certifications & Memberships */}
+          <div className={`mb-16 transition-all duration-700 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center mb-8">
               <div className="bg-amber-100 dark:bg-amber-900/30 rounded-lg p-2 mr-4">
                 <Award className="h-6 w-6 text-amber-600 dark:text-amber-400" />
               </div>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-                Awards & Honors
+                Awards, Certifications & Memberships
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Awards */}
               <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-center mb-2">
-                  <div className="h-8 w-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mr-3">
-                    <Award className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+                <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-4">Awards</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <Award className="h-5 w-5 text-amber-500 mr-2 mt-0.5" />
+                    <div>
+                      <p className="font-medium text-slate-900 dark:text-white">Global Recognition Awards</p>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">September 2024</p>
+                    </div>
                   </div>
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-white">
-                    Outstanding Research Award
-                  </h3>
                 </div>
-                <p className="ml-11 text-slate-600 dark:text-slate-300">
-                  ACM SIGCOMM, 2022
-                </p>
               </div>
-              
+
+              {/* Certifications */}
               <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-center mb-2">
-                  <div className="h-8 w-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mr-3">
-                    <Award className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+                <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-4">Certifications</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <Award className="h-5 w-5 text-blue-500 mr-2 mt-0.5" />
+                    <div>
+                      <p className="font-medium text-slate-900 dark:text-white">Judge, Globee® Awards for Business</p>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">October 2024</p>
+                    </div>
                   </div>
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-white">
-                    Best Paper Award
-                  </h3>
+                  <div className="flex items-start">
+                    <Award className="h-5 w-5 text-blue-500 mr-2 mt-0.5" />
+                    <div>
+                      <p className="font-medium text-slate-900 dark:text-white">Advance SQL for Data Scientists</p>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">November 2018</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Award className="h-5 w-5 text-blue-500 mr-2 mt-0.5" />
+                    <div>
+                      <p className="font-medium text-slate-900 dark:text-white">Introduction to Cloud Computing</p>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">November 2018</p>
+                    </div>
+                  </div>
                 </div>
-                <p className="ml-11 text-slate-600 dark:text-slate-300">
-                  IEEE International Conference on Distributed Computing Systems, 2021
-                </p>
               </div>
-              
-              <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-center mb-2">
-                  <div className="h-8 w-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mr-3">
-                    <Award className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+
+              {/* Memberships */}
+              <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden p-6 hover:shadow-lg transition-shadow md:col-span-2">
+                <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-4">Professional Memberships</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="flex items-start">
+                    <Users className="h-5 w-5 text-indigo-500 mr-2 mt-0.5" />
+                    <p className="text-slate-700 dark:text-slate-300">Senior Member, IEEE, USA</p>
                   </div>
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-white">
-                    Google Research Fellowship
-                  </h3>
-                </div>
-                <p className="ml-11 text-slate-600 dark:text-slate-300">
-                  2018-2020
-                </p>
-              </div>
-              
-              <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 overflow-hidden p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-center mb-2">
-                  <div className="h-8 w-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mr-3">
-                    <Award className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+                  <div className="flex items-start">
+                    <Users className="h-5 w-5 text-indigo-500 mr-2 mt-0.5" />
+                    <p className="text-slate-700 dark:text-slate-300">Member, SigmaXi, USA</p>
                   </div>
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-white">
-                    ACM Student Research Competition, 1st Place
-                  </h3>
+                  <div className="flex items-start">
+                    <Users className="h-5 w-5 text-indigo-500 mr-2 mt-0.5" />
+                    <p className="text-slate-700 dark:text-slate-300">Member, International Association of Engineers, Hong Kong</p>
+                  </div>
+                  <div className="flex items-start">
+                    <Users className="h-5 w-5 text-indigo-500 mr-2 mt-0.5" />
+                    <p className="text-slate-700 dark:text-slate-300">Program Committee Member: PyTorch Conference 2025 (The Linux Foundation)</p>
+                  </div>
+                  <div className="flex items-start md:col-span-2">
+                    <Users className="h-5 w-5 text-indigo-500 mr-2 mt-0.5" />
+                    <p className="text-slate-700 dark:text-slate-300">Guest Reviewer - MDPI, Springer Nature, IEEE, IOP</p>
+                  </div>
                 </div>
-                <p className="ml-11 text-slate-600 dark:text-slate-300">
-                  2017
-                </p>
               </div>
             </div>
           </div>
@@ -482,16 +520,3 @@ export default function CV() {
     </Layout>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
