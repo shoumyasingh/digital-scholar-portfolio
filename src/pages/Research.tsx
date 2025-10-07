@@ -650,7 +650,7 @@ export default function Research() {
               }}
               className={activeTab === 'conferences' ? 'bg-blue-600 hover:bg-blue-700' : 'border-slate-200 dark:border-slate-700'}
             >
-              Conferences
+              Conference Paper
             </Button>
             <Button
               variant={activeTab === 'research-publications' ? 'default' : 'outline'}
@@ -801,7 +801,7 @@ export default function Research() {
                 <Calendar className="h-6 w-6 text-green-600 dark:text-green-400" />
               </div>
               <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-                Conference Participation
+                Conference Paper
               </h2>
             </div>
             
