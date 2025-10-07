@@ -17,7 +17,7 @@ export default function BlogPost() {
   const blog = {
     title: "Advancements in Natural Language Processing",
     date: "April 10, 2023",
-    author: "Dr. Jane Doe",
+    author: "Dr. Deepak Kumar",
     readTime: "8 min read",
     category: "Artificial Intelligence",
     content: `

@@ -178,10 +178,10 @@ export default function Contact() {
                         Email
                       </h3>
                       <a 
-                        href="mailto:jane.doe@example.com" 
+                        href="mailto:deepak.kumar@example.com" 
                         className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                       >
-                        jane.doe@example.com
+                        deepak.kumar@example.com
                       </a>
                     </div>
                   </div>
