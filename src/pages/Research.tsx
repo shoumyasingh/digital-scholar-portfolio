@@ -29,39 +29,140 @@ export default function Research() {
 
   const publications = [
     {
-      title: "Optimizing IoT Networks Using Adaptive Learning Algorithms",
-      authors: "Doe, J., Smith, A., & Johnson, B.",
-      journal: "Journal of Network and Computer Applications",
-      year: 2023,
-      doi: "10.1016/j.jnca.2023.05.012",
-      pdf: "#",
-      id: "intelligent-systems"
+      title: "Analyzing the Impact of Machine Learning Algorithms on Risk Management and Fraud Detection in Financial Institution",
+      authors: "Kumar, D., & Singh, S.",
+      journal: "Research Publication",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/380365979_Analyzing_the_Impact_of_Machine_Learning_Algorithms_on_Risk_Management_and_Fraud_Detection_in_Financial_Institution",
+      pdf: "https://www.researchgate.net/publication/380365979_Analyzing_the_Impact_of_Machine_Learning_Algorithms_on_Risk_Management_and_Fraud_Detection_in_Financial_Institution"
     },
     {
-      title: "Context-Aware Interfaces: A Comprehensive Survey",
-      authors: "Doe, J. & Williams, C.",
-      journal: "ACM Transactions on Computer-Human Interaction",
-      year: 2022,
-      doi: "10.1145/3491102.3502025",
-      pdf: "#",
-      id: "adaptive-ui"
+      title: "An Efficient DDoS Attack Detection using Attention based Hybrid Model in Blockchain based SDN-IoT",
+      authors: "Pawar, P. P., Kumar, D., Ananthan, B., & Selvi, A. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381943945_An_Efficient_DDoS_Attack_Detection_using_Attention_based_Hybrid_Model_in_Blockchain_based_SDN-IoT",
+      pdf: "https://www.researchgate.net/publication/381943945_An_Efficient_DDoS_Attack_Detection_using_Attention_based_Hybrid_Model_in_Blockchain_based_SDN-IoT"
     },
     {
-      title: "Heterogeneous Computing in Distributed Environments: Challenges and Solutions",
-      authors: "Doe, J., Miller, R., Garcia, L., & Chen, H.",
-      journal: "IEEE Transactions on Parallel and Distributed Systems",
-      year: 2021,
-      doi: "10.1109/TPDS.2021.3061520",
-      pdf: "#",
-      id: "distributed-computing"
+      title: "ChOs_LSTM: Chebyshev Osprey Optimization-Based Model for Detecting Attacks",
+      authors: "Kumar, D., Pawar, P. P., Ananthan, B., & Murugan, M. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381952076_ChOs_LSTM_Chebyshev_Osprey_Optimization-Based_Model_for_Detecting_Attacks",
+      pdf: "https://www.researchgate.net/publication/381952076_ChOs_LSTM_Chebyshev_Osprey_Optimization-Based_Model_for_Detecting_Attacks"
     },
     {
-      title: "Machine Learning Approaches for Anomaly Detection in IoT Networks",
-      authors: "Smith, A., Doe, J., & Taylor, E.",
-      journal: "Sensors Journal",
-      year: 2020,
-      doi: "10.3390/s20102876",
-      pdf: "#"
+      title: "Banking Fraud Detection Using Optimized Enhanced Stacked Autoencoder Approach",
+      authors: "Kumar, D., Perumalsamy, A., Murugachandravel, J., & Pawar, P. P.",
+      journal: "Article",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/392832274_Banking_Fraud_Detection_Using_Optimized_Enhanced_Stacked_Autoencoder_Approach",
+      pdf: "https://www.researchgate.net/publication/392832274_Banking_Fraud_Detection_Using_Optimized_Enhanced_Stacked_Autoencoder_Approach"
+    },
+    {
+      title: "A Blockchain-Based IoT Framework for Smart Homes: Enhancing Energy Prediction and Security with LSTM and Equilibrium Optimization",
+      authors: "Pawar, P., Kumar, D., Addula, S. R., & Meesala, M. K.",
+      journal: "Conference Paper",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/393374655_A_Blockchain-Based_IoT_Framework_for_Smart_Homes_Enhancing_Energy_Prediction_and_Security_with_LSTM_and_Equilibrium_Optimization",
+      pdf: "https://www.researchgate.net/publication/393374655_A_Blockchain-Based_IoT_Framework_for_Smart_Homes_Enhancing_Energy_Prediction_and_Security_with_LSTM_and_Equilibrium_Optimization"
+    },
+    {
+      title: "Enhancing manufacturing efficiency: leveraging CRM data with Lean-based DL approach for early failure detection",
+      authors: "Kalluri, V. S., Malineni, S. C., Seenivasan, M., Kumar, D., & Ananthan, B.",
+      journal: "Article",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/391399727_Enhancing_manufacturing_efficiency_leveraging_CRM_data_with_Lean-based_DL_approach_for_early_failure_detection",
+      pdf: "https://www.researchgate.net/publication/391399727_Enhancing_manufacturing_efficiency_leveraging_CRM_data_with_Lean-based_DL_approach_for_early_failure_detection"
+    },
+    {
+      title: "Hierarchical Blockchain Framework for Node Authentication in IoT Networks: A Comprehensive Analysis",
+      authors: "Kumar, D., Yadulla, A. R., Bhuvanesh, A., & Keerthanadevi, R.",
+      journal: "Conference Paper",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/394006431_Hierarchical_Blockchain_Framework_for_Node_Authentication_in_IoT_Networks_A_Comprehensive_Analysis",
+      pdf: "https://www.researchgate.net/publication/394006431_Hierarchical_Blockchain_Framework_for_Node_Authentication_in_IoT_Networks_A_Comprehensive_Analysis"
+    },
+    {
+      title: "Blockchain‑enabled cybersecurity for IoT using elliptic curve cryptography and black winged kite model",
+      authors: "Pawar, P. P., Kumar, D., & Bhuvanesh, A.",
+      journal: "Article",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/391807615_Blockchain-enabled_cybersecurity_for_IoT_using_elliptic_curve_cryptography_and_black_winged_kite_model",
+      pdf: "https://www.researchgate.net/publication/391807615_Blockchain-enabled_cybersecurity_for_IoT_using_elliptic_curve_cryptography_and_black_winged_kite_model"
+    },
+    {
+      title: "A walrus optimization-enhanced long short-term memory model for credit fraud detection in banking",
+      authors: "Pillai, S. V. S., Nadella, G. S., Meduri, K., & Kumar, D.",
+      journal: "Article",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/391793602_A_walrus_optimization-enhanced_long_short-term_memory_model_for_credit_fraud_detection_in_banking",
+      pdf: "https://www.researchgate.net/publication/391793602_A_walrus_optimization-enhanced_long_short-term_memory_model_for_credit_fraud_detection_in_banking"
+    },
+    {
+      title: "Forecasting the Unseen: Enhancing Tsunami Occurrence Predictions with Machine-Learning-Driven Analytics",
+      authors: "Satish, S., Gonaygunta, H., Yadulla, A. R., Kumar, D., & Sajja, G. S.",
+      journal: "Article",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/391320298_Forecasting_the_Unseen_Enhancing_Tsunami_Occurrence_Predictions_with_Machine-Learning-Driven_Analytics",
+      pdf: "https://www.researchgate.net/publication/391320298_Forecasting_the_Unseen_Enhancing_Tsunami_Occurrence_Predictions_with_Machine-Learning-Driven_Analytics"
+    },
+    {
+      title: "Role of Emerging Technologies With Natural Language Processing for the Next Decade",
+      authors: "Kumari, S., Tyagi, A., Kumar, D., & Sharma, A. K.",
+      journal: "Book Chapter",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/390597337_Role_of_Emerging_Technologies_With_Natural_Language_Processing_for_the_Next_Decade",
+      pdf: "https://www.researchgate.net/publication/390597337_Role_of_Emerging_Technologies_With_Natural_Language_Processing_for_the_Next_Decade"
+    },
+    {
+      title: "Natural Language Processing (NLP)-Based Intelligence for Pattern Mining Using Artificial Intelligence, Robotics, and Cloud Computing",
+      authors: "Tyagi, A., Balamurugan, G., Kumar, D., & Kumari, S.",
+      journal: "Book Chapter",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/390597437_Natural_Language_Processing_NLP-Based_Intelligence_for_Pattern_Mining_Using_Artificial_Intelligence_Robotics_and_Cloud_Computing",
+      pdf: "https://www.researchgate.net/publication/390597437_Natural_Language_Processing_NLP-Based_Intelligence_for_Pattern_Mining_Using_Artificial_Intelligence_Robotics_and_Cloud_Computing"
+    },
+    {
+      title: "Enhanced Blockchain-Based Big Data Authentication for Distributed Environments: An Analytical Study",
+      authors: "Pawar, P., Yadulla, A. R., Bhuvanesh, A., Kumar, D., & Keerthanadevi, R.",
+      journal: "Conference Paper",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/391611027_Enhanced_Blockchain-Based_Big_Data_Authentication_for_Distributed_Environments_An_Analytical_Study",
+      pdf: "https://www.researchgate.net/publication/391611027_Enhanced_Blockchain-Based_Big_Data_Authentication_for_Distributed_Environments_An_Analytical_Study"
+    },
+    {
+      title: "Exploring Blockchain-Enabled Secure Storage and Trusted Data Sharing Mechanisms in IoT Systems",
+      authors: "Pawar, P., Kasula, V. K., Bhuvanesh, A., Kumar, D., & Keerthanadevi, R.",
+      journal: "Conference Paper",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/391616831_Exploring_Blockchain-Enabled_Secure_Storage_and_Trusted_Data_Sharing_Mechanisms_in_IoT_Systems",
+      pdf: "https://www.researchgate.net/publication/391616831_Exploring_Blockchain-Enabled_Secure_Storage_and_Trusted_Data_Sharing_Mechanisms_in_IoT_Systems"
+    },
+    {
+      title: "Smart sensors for Hospital 4.0/5.0: an introduction",
+      authors: "Kumar, D., Hemamalini, V., Tyagi, A., & Singh, R.",
+      journal: "Book Chapter",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/390413439_Smart_sensors_for_Hospital_4050_an_introduction",
+      pdf: "https://www.researchgate.net/publication/390413439_Smart_sensors_for_Hospital_4050_an_introduction"
+    },
+    {
+      title: "Dragonfly-Optimized K-Means Clustering via Wireless Sensor Network for Energy Consumption",
+      authors: "Appathurai, A., Rajamani, K., Kumar, D., & Pran, S. G.",
+      journal: "Book Chapter",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/395083933_Dragonfly-Optimized_K-Means_Clustering_via_Wireless_Sensor_Network_for_Energy_Consumption",
+      pdf: "https://www.researchgate.net/publication/395083933_Dragonfly-Optimized_K-Means_Clustering_via_Wireless_Sensor_Network_for_Energy_Consumption"
+    },
+    {
+      title: "Security and Privacy in AI: IoT-Enabled Banking and Finance Services",
+      authors: "Ramu, S., Addula, S. R., Kumar, D., & Tyagi, A.",
+      journal: "Book Chapter",
+      year: 2025,
+      link: "https://www.researchgate.net/publication/394416140_Security_and_Privacy_in_AI_IoT-Enabled_Banking_and_Finance_Services",
+      pdf: "https://www.researchgate.net/publication/394416140_Security_and_Privacy_in_AI_IoT-Enabled_Banking_and_Finance_Services"
     }
   ];
 
@@ -258,7 +359,6 @@ export default function Research() {
               {publications.map((pub, index) => (
                 <div 
                   key={index}
-                  id={pub.id}
                   className="group bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all"
                 >
                   <div className="h-2 w-full bg-gradient-to-r from-purple-500 to-indigo-500"></div>
@@ -280,12 +380,12 @@ export default function Research() {
                       </div>
                       <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
                         <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-700">
-                          <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> DOI
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View
                           </a>
                         </Button>
                         <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-700">
-                          <a href={pub.pdf} className="flex items-center">
+                          <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
                             <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
                           </a>
                         </Button>
