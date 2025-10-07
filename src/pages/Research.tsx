@@ -18,6 +18,10 @@ export default function Research() {
       const id = hash.substring(1);
       if (id === 'publications') setActiveTab('publications');
       if (id === 'conferences') setActiveTab('conferences');
+      if (id === 'research-publications') setActiveTab('research-publications');
+      if (id === 'articles') setActiveTab('articles');
+      if (id === 'book-chapters') setActiveTab('book-chapters');
+      if (id === 'preprints') setActiveTab('preprints');
       
       // Scroll to element with delay for animation
       setTimeout(() => {
@@ -648,6 +652,46 @@ export default function Research() {
             >
               Conferences
             </Button>
+            <Button
+              variant={activeTab === 'research-publications' ? 'default' : 'outline'}
+              onClick={() => {
+                setActiveTab('research-publications');
+                document.getElementById('research-publications')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className={activeTab === 'research-publications' ? 'bg-blue-600 hover:bg-blue-700' : 'border-slate-200 dark:border-slate-700'}
+            >
+              Research Publication
+            </Button>
+            <Button
+              variant={activeTab === 'articles' ? 'default' : 'outline'}
+              onClick={() => {
+                setActiveTab('articles');
+                document.getElementById('articles')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className={activeTab === 'articles' ? 'bg-blue-600 hover:bg-blue-700' : 'border-slate-200 dark:border-slate-700'}
+            >
+              Article
+            </Button>
+            <Button
+              variant={activeTab === 'book-chapters' ? 'default' : 'outline'}
+              onClick={() => {
+                setActiveTab('book-chapters');
+                document.getElementById('book-chapters')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className={activeTab === 'book-chapters' ? 'bg-blue-600 hover:bg-blue-700' : 'border-slate-200 dark:border-slate-700'}
+            >
+              Book Chapter
+            </Button>
+            <Button
+              variant={activeTab === 'preprints' ? 'default' : 'outline'}
+              onClick={() => {
+                setActiveTab('preprints');
+                document.getElementById('preprints')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className={activeTab === 'preprints' ? 'bg-blue-600 hover:bg-blue-700' : 'border-slate-200 dark:border-slate-700'}
+            >
+              Preprint
+            </Button>
           </div>
         </div>
       </div>
@@ -751,7 +795,7 @@ export default function Research() {
           </div>
           
           {/* Conference Participation */}
-          <div id="conferences" className={`scroll-mt-24 transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div id="conferences" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center mb-8">
               <div className="bg-green-100 dark:bg-green-900/30 rounded-lg p-2 mr-4">
                 <Calendar className="h-6 w-6 text-green-600 dark:text-green-400" />
@@ -787,6 +831,214 @@ export default function Research() {
                         <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-green-300 dark:hover:border-green-700">
                           <a href={conf.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
                             <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View Paper
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Research Publications */}
+          <div id="research-publications" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="flex items-center mb-8">
+              <div className="bg-orange-100 dark:bg-orange-900/30 rounded-lg p-2 mr-4">
+                <FileText className="h-6 w-6 text-orange-600 dark:text-orange-400" />
+              </div>
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                Research Publications
+              </h2>
+            </div>
+            
+            <div className="space-y-8">
+              {publications.filter(pub => pub.journal === "Research Publication").map((pub, index) => (
+                <div 
+                  key={index}
+                  className="group bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all"
+                >
+                  <div className="h-2 w-full bg-gradient-to-r from-orange-500 to-amber-500"></div>
+                  <div className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-start justify-between">
+                      <div className="flex-grow">
+                        <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
+                          {pub.title}
+                        </h3>
+                        <p className="italic text-slate-600 dark:text-slate-300 mb-2">
+                          {pub.authors}
+                        </p>
+                        <div className="flex items-center mb-6">
+                          <Badge className="bg-orange-50 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400">
+                            {pub.year}
+                          </Badge>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-orange-300 dark:hover:border-orange-700">
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View
+                          </a>
+                        </Button>
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-orange-300 dark:hover:border-orange-700">
+                          <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Articles */}
+          <div id="articles" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="flex items-center mb-8">
+              <div className="bg-cyan-100 dark:bg-cyan-900/30 rounded-lg p-2 mr-4">
+                <FileText className="h-6 w-6 text-cyan-600 dark:text-cyan-400" />
+              </div>
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                Articles
+              </h2>
+            </div>
+            
+            <div className="space-y-8">
+              {publications.filter(pub => pub.journal === "Article").map((pub, index) => (
+                <div 
+                  key={index}
+                  className="group bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all"
+                >
+                  <div className="h-2 w-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+                  <div className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-start justify-between">
+                      <div className="flex-grow">
+                        <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+                          {pub.title}
+                        </h3>
+                        <p className="italic text-slate-600 dark:text-slate-300 mb-2">
+                          {pub.authors}
+                        </p>
+                        <div className="flex items-center mb-6">
+                          <Badge className="bg-cyan-50 text-cyan-600 dark:bg-cyan-900/30 dark:text-cyan-400">
+                            {pub.year}
+                          </Badge>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-cyan-300 dark:hover:border-cyan-700">
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View
+                          </a>
+                        </Button>
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-cyan-300 dark:hover:border-cyan-700">
+                          <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Book Chapters */}
+          <div id="book-chapters" className={`mb-20 scroll-mt-24 transition-all duration-700 delay-1100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="flex items-center mb-8">
+              <div className="bg-pink-100 dark:bg-pink-900/30 rounded-lg p-2 mr-4">
+                <BookOpen className="h-6 w-6 text-pink-600 dark:text-pink-400" />
+              </div>
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                Book Chapters
+              </h2>
+            </div>
+            
+            <div className="space-y-8">
+              {publications.filter(pub => pub.journal === "Book Chapter").map((pub, index) => (
+                <div 
+                  key={index}
+                  className="group bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all"
+                >
+                  <div className="h-2 w-full bg-gradient-to-r from-pink-500 to-rose-500"></div>
+                  <div className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-start justify-between">
+                      <div className="flex-grow">
+                        <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors">
+                          {pub.title}
+                        </h3>
+                        <p className="italic text-slate-600 dark:text-slate-300 mb-2">
+                          {pub.authors}
+                        </p>
+                        <div className="flex items-center mb-6">
+                          <Badge className="bg-pink-50 text-pink-600 dark:bg-pink-900/30 dark:text-pink-400">
+                            {pub.year}
+                          </Badge>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-pink-300 dark:hover:border-pink-700">
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View
+                          </a>
+                        </Button>
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-pink-300 dark:hover:border-pink-700">
+                          <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Preprints */}
+          <div id="preprints" className={`scroll-mt-24 transition-all duration-700 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="flex items-center mb-8">
+              <div className="bg-amber-100 dark:bg-amber-900/30 rounded-lg p-2 mr-4">
+                <FileCode className="h-6 w-6 text-amber-600 dark:text-amber-400" />
+              </div>
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                Preprints
+              </h2>
+            </div>
+            
+            <div className="space-y-8">
+              {publications.filter(pub => pub.journal === "Preprint").map((pub, index) => (
+                <div 
+                  key={index}
+                  className="group bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all"
+                >
+                  <div className="h-2 w-full bg-gradient-to-r from-amber-500 to-yellow-500"></div>
+                  <div className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-start justify-between">
+                      <div className="flex-grow">
+                        <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                          {pub.title}
+                        </h3>
+                        <p className="italic text-slate-600 dark:text-slate-300 mb-2">
+                          {pub.authors}
+                        </p>
+                        <div className="flex items-center mb-6">
+                          <Badge className="bg-amber-50 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400">
+                            {pub.year}
+                          </Badge>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-amber-300 dark:hover:border-amber-700">
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View
+                          </a>
+                        </Button>
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-amber-300 dark:hover:border-amber-700">
+                          <a href={pub.pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <Download className="h-3.5 w-3.5 mr-1.5" /> PDF
                           </a>
                         </Button>
                       </div>
