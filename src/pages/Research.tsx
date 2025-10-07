@@ -163,6 +163,254 @@ export default function Research() {
       year: 2025,
       link: "https://www.researchgate.net/publication/394416140_Security_and_Privacy_in_AI_IoT-Enabled_Banking_and_Finance_Services",
       pdf: "https://www.researchgate.net/publication/394416140_Security_and_Privacy_in_AI_IoT-Enabled_Banking_and_Finance_Services"
+    },
+    {
+      title: "Dynamic Load Balancing in Cloud Computing using Hybrid Kookaburra-Pelican Optimization Algorithms",
+      authors: "Addula, S. R., Perugu, P. P., Kumar, M. K., Kumar, D., & Sreetha, G.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/394760231_Dynamic_Load_Balancing_in_Cloud_Computing_using_Hybrid_Kookaburra-Pelican_Optimization_Algorithms",
+      pdf: "https://www.researchgate.net/publication/394760231_Dynamic_Load_Balancing_in_Cloud_Computing_using_Hybrid_Kookaburra-Pelican_Optimization_Algorithms"
+    },
+    {
+      title: "Enhanced Stock Market Trend Prediction on the Indonesia Stock Exchange Using Improved Bacterial Foraging Optimization and Elitist Whale Optimization Algorithms",
+      authors: "Kumar, D., Pawar, P. P., Meesala, M. K., & Shwetha, K. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/388739428_Enhanced_Stock_Market_Trend_Prediction_on_the_Indonesia_Stock_Exchange_Using_Improved_Bacterial_Foraging_Optimization_and_Elitist_Whale_Optimization_Algorithms",
+      pdf: "https://www.researchgate.net/publication/388739428_Enhanced_Stock_Market_Trend_Prediction_on_the_Indonesia_Stock_Exchange_Using_Improved_Bacterial_Foraging_Optimization_and_Elitist_Whale_Optimization_Algorithms"
+    },
+    {
+      title: "A Patient-Centric Blockchain Framework for Transparent and Secure Medical Data Sharing Using Modified AES",
+      authors: "Pawar, P. P., Kumar, D., Meesala, M. K., & Shwetha, K. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/388739854_A_Patient-Centric_Blockchain_Framework_for_Transparent_and_Secure_Medical_Data_Sharing_Using_Modified_AES",
+      pdf: "https://www.researchgate.net/publication/388739854_A_Patient-Centric_Blockchain_Framework_for_Transparent_and_Secure_Medical_Data_Sharing_Using_Modified_AES"
+    },
+    {
+      title: "Securing Digital Governance: A Deep Learning and Blockchain Framework for Malware Detection in IoT Networks",
+      authors: "Pawar, P. P., Kumar, D., Meesala, M. K., & Shwetha, K. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/388740837_Securing_Digital_Governance_A_Deep_Learning_and_Blockchain_Framework_for_Malware_Detection_in_IoT_Networks",
+      pdf: "https://www.researchgate.net/publication/388740837_Securing_Digital_Governance_A_Deep_Learning_and_Blockchain_Framework_for_Malware_Detection_in_IoT_Networks"
+    },
+    {
+      title: "Trustworthy IoT Infrastructures: Privacy-Preserving Federated Learning with Efficient Secure Aggregation for Cybersecurity",
+      authors: "Kumar, D., Pawar, P. P., Meesala, M. K., & Shwetha, K. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/388740840_Trustworthy_IoT_Infrastructures_Privacy-Preserving_Federated_Learning_with_Efficient_Secure_Aggregation_for_Cybersecurity",
+      pdf: "https://www.researchgate.net/publication/388740840_Trustworthy_IoT_Infrastructures_Privacy-Preserving_Federated_Learning_with_Efficient_Secure_Aggregation_for_Cybersecurity"
+    },
+    {
+      title: "Smart Agriculture in the Era of Big Data: IoT-Assisted Pest Forecasting and Resource Optimization for Sustainable Farming",
+      authors: "Kumar, D., Pawar, P. P., Meesala, M. K., & Shwetha, K. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/388743397_Smart_Agriculture_in_the_Era_of_Big_Data_IoT-Assisted_Pest_Forecasting_and_Resource_Optimization_for_Sustainable_Farming",
+      pdf: "https://www.researchgate.net/publication/388743397_Smart_Agriculture_in_the_Era_of_Big_Data_IoT-Assisted_Pest_Forecasting_and_Resource_Optimization_for_Sustainable_Farming"
+    },
+    {
+      title: "AI-Driven Predictive Models for Earthquake Forecasting Using Big Data Analytics",
+      authors: "Satish, S., Gonaygunta, H., Yadulla, A. R., Kumar, D., & Nadella, G. S.",
+      journal: "Preprint",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/384766039_AI-Driven_Predictive_Models_for_Earthquake_Forecasting_Using_Big_Data_Analytics",
+      pdf: "https://www.researchgate.net/publication/384766039_AI-Driven_Predictive_Models_for_Earthquake_Forecasting_Using_Big_Data_Analytics"
+    },
+    {
+      title: "Human-centered AI for personalized workload management: A multimodal approach to preventing employee burnout",
+      authors: "Meduri, K., Nadella, G. S., Gonaygunta, H., Kumar, D., & Rehman, S. U.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/383764838_Human-centered_AI_for_personalized_workload_management_A_multimodal_approach_to_preventing_employee_burnout",
+      pdf: "https://www.researchgate.net/publication/383764838_Human-centered_AI_for_personalized_workload_management_A_multimodal_approach_to_preventing_employee_burnout"
+    },
+    {
+      title: "Enhanced affinity propagation clustering with a modified extreme learning machine for segmentation and classification of hyperspectral imaging",
+      authors: "Daniel, V. A. A., Vijayalakshmi, K., Pawar, P. P., Kumar, D., & Christilda, A. J.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/383634681_Enhanced_affinity_propagation_clustering_with_a_modified_extreme_learning_machine_for_segmentation_and_classification_of_hyperspectral_imaging",
+      pdf: "https://www.researchgate.net/publication/383634681_Enhanced_affinity_propagation_clustering_with_a_modified_extreme_learning_machine_for_segmentation_and_classification_of_hyperspectral_imaging"
+    },
+    {
+      title: "Investigation on Digital Forensic Using Graph Based Neural Network With Blockchain Technology",
+      authors: "Pawar, P. P., Kumar, D., Bhujang, R., & Deepika, K. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/384538103_Investigation_on_Digital_Forensic_Using_Graph_Based_Neural_Network_With_Blockchain_Technology",
+      pdf: "https://www.researchgate.net/publication/384538103_Investigation_on_Digital_Forensic_Using_Graph_Based_Neural_Network_With_Blockchain_Technology"
+    },
+    {
+      title: "SINN Based Federated Learning Model for Intrusion Detection with Blockchain Technology in Digital Forensic",
+      authors: "Pawar, P. P., Kumar, D., Kumar, P., & Deepika, K. S.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/384543124_SINN_Based_Federated_Learning_Model_for_Intrusion_Detection_with_Blockchain_Technology_in_Digital_Forensic",
+      pdf: "https://www.researchgate.net/publication/384543124_SINN_Based_Federated_Learning_Model_for_Intrusion_Detection_with_Blockchain_Technology_in_Digital_Forensic"
+    },
+    {
+      title: "Optimizing Energy Efficiency in Edge-Computing Environments with Dynamic Resource Allocation",
+      authors: "Maturi, M. H., Podicheti, S., & Kumar, D.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381577573_Optimizing_Energy_Efficiency_in_Edge-Computing_Environments_with_Dynamic_Resource_Allocation",
+      pdf: "https://www.researchgate.net/publication/381577573_Optimizing_Energy_Efficiency_in_Edge-Computing_Environments_with_Dynamic_Resource_Allocation"
+    },
+    {
+      title: "PFCM based Segmentation and TFA based DCNN model for Skin Cancer Classification using Dermoscopic Images",
+      authors: "Pawar, P. P., Kumar, D., Kumar, P., & Manoj, H. M.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/384548636_PFCM_based_Segmentation_and_TFA_based_DCNN_model_for_Skin_Cancer_Classification_using_Dermoscopic_Images",
+      pdf: "https://www.researchgate.net/publication/384548636_PFCM_based_Segmentation_and_TFA_based_DCNN_model_for_Skin_Cancer_Classification_using_Dermoscopic_Images"
+    },
+    {
+      title: "Innovative Horizons in Agricultural Technology with TSA Based StrawberrySqueezeNet Classification Model",
+      authors: "Kumar, D., Pawar, P. P., Kumar, P., & Manoj, H. M.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/384548880_Innovative_Horizons_in_Agricultural_Technology_with_TSA_based_StrawberrySqueezeNet_Classification_Model",
+      pdf: "https://www.researchgate.net/publication/384548880_Innovative_Horizons_in_Agricultural_Technology_with_TSA_based_StrawberrySqueezeNet_Classification_Model"
+    },
+    {
+      title: "Data Fortress: Innovations in Big Data Analytics for Proactive Cybersecurity Defense and Asset Protection",
+      authors: "Singh, S., & Kumar, D.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381178737_Data_Fortress_Innovations_in_Big_Data_Analytics_for_Proactive_Cybersecurity_Defense_and_Asset_Protection",
+      pdf: "https://www.researchgate.net/publication/381178737_Data_Fortress_Innovations_in_Big_Data_Analytics_for_Proactive_Cybersecurity_Defense_and_Asset_Protection"
+    },
+    {
+      title: "Enhancing Cyber Security Using Quantum Computing and Artificial Intelligence: A Review",
+      authors: "Singh, S., & Kumar, D.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381519152_Enhancing_Cyber_Security_Using_Quantum_Computing_and_Artificial_Intelligence_A_Review",
+      pdf: "https://www.researchgate.net/publication/381519152_Enhancing_Cyber_Security_Using_Quantum_Computing_and_Artificial_Intelligence_A_Review"
+    },
+    {
+      title: "ADVANCEMENTS IN TRANSFORMER ARCHITECTURES FOR LARGE LANGUAGE MODEL: FROM BERT TO GPT-3 AND BEYOND",
+      authors: "Kumar, D., & Singh, S.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/380530250_ADVANCEMENTS_IN_TRANSFORMER_ARCHITECTURES_FOR_LARGE_LANGUAGE_MODEL_FROM_BERT_TO_GPT-3_AND_BEYOND",
+      pdf: "https://www.researchgate.net/publication/380530250_ADVANCEMENTS_IN_TRANSFORMER_ARCHITECTURES_FOR_LARGE_LANGUAGE_MODEL_FROM_BERT_TO_GPT-3_AND_BEYOND"
+    },
+    {
+      title: "Study on Empowering Cyber Security by Using Adaptive Machine Learning Methods",
+      authors: "Gonaygunta, H., Nadella, G. S., Pawar, P. P., & Kumar, D.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/380771681_Study_on_Empowering_Cyber_Security_by_Using_Adaptive_Machine_Learning_Methods",
+      pdf: "https://www.researchgate.net/publication/380771681_Study_on_Empowering_Cyber_Security_by_Using_Adaptive_Machine_Learning_Methods"
+    },
+    {
+      title: "Enhancing Cybersecurity: The Development of a Flexible Deep Learning Model for Enhanced Anomaly Detection",
+      authors: "Gonaygunta, H., Nadella, G. S., Pawar, P. P., & Kumar, D.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/380772746_Enhancing_Cybersecurity_The_Development_of_a_Flexible_Deep_Learning_Model_for_Enhanced_Anomaly_Detection",
+      pdf: "https://www.researchgate.net/publication/380772746_Enhancing_Cybersecurity_The_Development_of_a_Flexible_Deep_Learning_Model_for_Enhanced_Anomaly_Detection"
+    },
+    {
+      title: "An Advanced Wasserstein-Enabled Generative Adversarial Network Enabled Attack Detection for Blockchain-Assisted Intelligent Transportation System",
+      authors: "Pawar, P. P., Kumar, D., Ananthan, B., & Surya, R.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381934336_An_Advanced_Wasserstein-Enabled_Generative_Adversarial_Network_Enabled_Attack_Detection_for_Blockchain-Assisted_Intelligent_Transportation_System",
+      pdf: "https://www.researchgate.net/publication/381934336_An_Advanced_Wasserstein-Enabled_Generative_Adversarial_Network_Enabled_Attack_Detection_for_Blockchain-Assisted_Intelligent_Transportation_System"
+    },
+    {
+      title: "Optimized Support Vector Machine Based Fused IoT Network Security Management",
+      authors: "Kumar, D., Pawar, P. P., Ananthan, B., & Prabhakaran, T. V.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381934981_Optimized_Support_Vector_Machine_Based_Fused_IoT_Network_Security_Management",
+      pdf: "https://www.researchgate.net/publication/381934981_Optimized_Support_Vector_Machine_Based_Fused_IoT_Network_Security_Management"
+    },
+    {
+      title: "Analyzing the Impact of Regulatory Policies on the Adoption of AI Technologies in Cybersecurity",
+      authors: "Nadella, G. S., Gonaygunta, H., Pawar, P. P., & Kumar, D.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/380998804_Analyzing_the_Impact_of_Regulatory_Policies_on_the_Adoption_of_AI_Technologies_in_Cybersecurity",
+      pdf: "https://www.researchgate.net/publication/380998804_Analyzing_the_Impact_of_Regulatory_Policies_on_the_Adoption_of_AI_Technologies_in_Cybersecurity"
+    },
+    {
+      title: "Mayfly Optimization Algorithm with Bidirectional Long-Short Term Memory for Intrusion Detection System in Internet of Things",
+      authors: "Pillai, S. V. S., Polimetla, K., Alsalami, Z., & Kumar, D.",
+      journal: "Conference Paper",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/381395179_Mayfly_Optimization_Algorithm_with_Bidirectional_Long-Short_Term_Memory_for_Intrusion_Detection_System_in_Internet_of_Things",
+      pdf: "https://www.researchgate.net/publication/381395179_Mayfly_Optimization_Algorithm_with_Bidirectional_Long-Short_Term_Memory_for_Intrusion_Detection_System_in_Internet_of_Things"
+    },
+    {
+      title: "Exploring the impact of AI-driven solutions on cybersecurity adoption in small and medium enterprises",
+      authors: "Nadella, G. S., Gonaygunta, H., Kumar, D., & Pawar, P. P.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/380099020_Exploring_the_impact_of_AI-driven_solutions_on_cybersecurity_adoption_in_small_and_medium_enterprises",
+      pdf: "https://www.researchgate.net/publication/380099020_Exploring_the_impact_of_AI-driven_solutions_on_cybersecurity_adoption_in_small_and_medium_enterprises"
+    },
+    {
+      title: "Revolutionizing Healthcare: A review on exploring the impact of Telemedicine and Information Technology on Disease Prevention and Treatment",
+      authors: "Kumar, D., Pawar, P. P., Gonaygunta, H., Nadella, G. S., & Singh, S.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/379909176_Revolutionizing_Healthcare_A_review_on_exploring_the_impact_of_Telemedicine_and_Information_Technology_on_Disease_Prevention_and_Treatment",
+      pdf: "https://www.researchgate.net/publication/379909176_Revolutionizing_Healthcare_A_review_on_exploring_the_impact_of_Telemedicine_and_Information_Technology_on_Disease_Prevention_and_Treatment"
+    },
+    {
+      title: "Machine learning's role in personalized medicine & treatment optimization",
+      authors: "Kumar, D., Pawar, P. P., Gonaygunta, H., Nadella, G. S., & Singh, S.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/378550507_Machine_learning's_role_in_personalized_medicine_treatment_optimization",
+      pdf: "https://www.researchgate.net/publication/378550507_Machine_learning's_role_in_personalized_medicine_treatment_optimization"
+    },
+    {
+      title: "The Detection and Prevention of Cloud Computing Attacks Using Artificial Intelligence Technologies",
+      authors: "Gonaygunta, H., Nadella, G. S., Meduri, K., & Kumar, D.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/378208392_The_Detection_and_Prevention_of_Cloud_Computing_Attacks_Using_Artificial_Intelligence_Technologies",
+      pdf: "https://www.researchgate.net/publication/378208392_The_Detection_and_Prevention_of_Cloud_Computing_Attacks_Using_Artificial_Intelligence_Technologies"
+    },
+    {
+      title: "Adaptive Intelligence: GPT-Powered Language Models for Dynamic Responses to Emerging Healthcare Challenges",
+      authors: "Meduri, K., Gonaygunta, H., Nadella, G. S., & Kumar, D.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/377809358_Adaptive_Intelligence_GPT-Powered_Language_Models_for_Dynamic_Responses_to_Emerging_Healthcare_Challenges",
+      pdf: "https://www.researchgate.net/publication/377809358_Adaptive_Intelligence_GPT-Powered_Language_Models_for_Dynamic_Responses_to_Emerging_Healthcare_Challenges"
+    },
+    {
+      title: "Impact of Federated Learning on Industrial IoT - A Review",
+      authors: "Singh, S., Kumar, D., Pawar, P., & Gonaygunta, H.",
+      journal: "Article",
+      year: 2024,
+      link: "https://www.researchgate.net/publication/377487610_Impact_of_Federated_Learning_on_Industrial_IoT_-_A_Review",
+      pdf: "https://www.researchgate.net/publication/377487610_Impact_of_Federated_Learning_on_Industrial_IoT_-_A_Review"
+    },
+    {
+      title: "How can we make IoT Applications better with Federated Learning-A Review",
+      authors: "Gonaygunta, H., Kumar, D., Maddini, S., & Rehman, S. F. U.",
+      journal: "Article",
+      year: 2023,
+      link: "https://www.researchgate.net/publication/368661775_How_can_we_make_IoT_Applications_better_with_Federated_Learning-A_Review",
+      pdf: "https://www.researchgate.net/publication/368661775_How_can_we_make_IoT_Applications_better_with_Federated_Learning-A_Review"
+    },
+    {
+      title: "Factors relating to Adoption of IoT for Home",
+      authors: "Kumar, D.",
+      journal: "Thesis",
+      year: 2022,
+      link: "https://www.researchgate.net/publication/381547498_Factors_relating_to_Adoption_of_IoT_for_Home",
+      pdf: "https://www.researchgate.net/publication/381547498_Factors_relating_to_Adoption_of_IoT_for_Home"
     }
   ];
 
