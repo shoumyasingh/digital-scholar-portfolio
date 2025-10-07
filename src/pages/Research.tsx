@@ -416,25 +416,130 @@ export default function Research() {
 
   const conferences = [
     {
-      name: "International Conference on Information Systems (ICIS)",
-      year: 2023,
-      role: "Speaker",
-      topic: "Distributed Computing Paradigms for Edge Networks",
-      location: "Copenhagen, Denmark"
+      title: "An Efficient DDoS Attack Detection using Attention based Hybrid Model in Blockchain based SDN-IoT",
+      year: 2024,
+      authors: "Pawar, P. P., Kumar, D., Ananthan, B., & Selvi, A. S.",
+      link: "https://www.researchgate.net/publication/381943945_An_Efficient_DDoS_Attack_Detection_using_Attention_based_Hybrid_Model_in_Blockchain_based_SDN-IoT"
     },
     {
-      name: "IEEE International Conference on Software Engineering (ICSE)",
-      year: 2022,
-      role: "Session Chair",
-      topic: "AI-Powered Software Development",
-      location: "Pittsburgh, USA"
+      title: "ChOs_LSTM: Chebyshev Osprey Optimization-Based Model for Detecting Attacks",
+      year: 2024,
+      authors: "Kumar, D., Pawar, P. P., Ananthan, B., & Murugan, M. S.",
+      link: "https://www.researchgate.net/publication/381952076_ChOs_LSTM_Chebyshev_Osprey_Optimization-Based_Model_for_Detecting_Attacks"
     },
     {
-      name: "ACM Conference on Human Factors in Computing Systems (CHI)",
-      year: 2021,
-      role: "Poster Presenter",
-      topic: "Adaptive User Interfaces",
-      location: "Virtual Event"
+      title: "A Blockchain-Based IoT Framework for Smart Homes: Enhancing Energy Prediction and Security with LSTM and Equilibrium Optimization",
+      year: 2025,
+      authors: "Pawar, P., Kumar, D., Addula, S. R., & Meesala, M. K.",
+      link: "https://www.researchgate.net/publication/393374655_A_Blockchain-Based_IoT_Framework_for_Smart_Homes_Enhancing_Energy_Prediction_and_Security_with_LSTM_and_Equilibrium_Optimization"
+    },
+    {
+      title: "Hierarchical Blockchain Framework for Node Authentication in IoT Networks: A Comprehensive Analysis",
+      year: 2025,
+      authors: "Kumar, D., Yadulla, A. R., Bhuvanesh, A., & Keerthanadevi, R.",
+      link: "https://www.researchgate.net/publication/394006431_Hierarchical_Blockchain_Framework_for_Node_Authentication_in_IoT_Networks_A_Comprehensive_Analysis"
+    },
+    {
+      title: "Enhanced Blockchain-Based Big Data Authentication for Distributed Environments: An Analytical Study",
+      year: 2025,
+      authors: "Pawar, P., Yadulla, A. R., Bhuvanesh, A., Kumar, D., & Keerthanadevi, R.",
+      link: "https://www.researchgate.net/publication/391611027_Enhanced_Blockchain-Based_Big_Data_Authentication_for_Distributed_Environments_An_Analytical_Study"
+    },
+    {
+      title: "Exploring Blockchain-Enabled Secure Storage and Trusted Data Sharing Mechanisms in IoT Systems",
+      year: 2025,
+      authors: "Pawar, P., Kasula, V. K., Bhuvanesh, A., Kumar, D., & Keerthanadevi, R.",
+      link: "https://www.researchgate.net/publication/391616831_Exploring_Blockchain-Enabled_Secure_Storage_and_Trusted_Data_Sharing_Mechanisms_in_IoT_Systems"
+    },
+    {
+      title: "Dynamic Load Balancing in Cloud Computing using Hybrid Kookaburra-Pelican Optimization Algorithms",
+      year: 2024,
+      authors: "Addula, S. R., Perugu, P. P., Kumar, M. K., Kumar, D., & Sreetha, G.",
+      link: "https://www.researchgate.net/publication/394760231_Dynamic_Load_Balancing_in_Cloud_Computing_using_Hybrid_Kookaburra-Pelican_Optimization_Algorithms"
+    },
+    {
+      title: "Enhanced Stock Market Trend Prediction on the Indonesia Stock Exchange Using Improved Bacterial Foraging Optimization and Elitist Whale Optimization Algorithms",
+      year: 2024,
+      authors: "Kumar, D., Pawar, P. P., Meesala, M. K., & Shwetha, K. S.",
+      link: "https://www.researchgate.net/publication/388739428_Enhanced_Stock_Market_Trend_Prediction_on_the_Indonesia_Stock_Exchange_Using_Improved_Bacterial_Foraging_Optimization_and_Elitist_Whale_Optimization_Algorithms"
+    },
+    {
+      title: "A Patient-Centric Blockchain Framework for Transparent and Secure Medical Data Sharing Using Modified AES",
+      year: 2024,
+      authors: "Pawar, P. P., Kumar, D., Meesala, M. K., & Shwetha, K. S.",
+      link: "https://www.researchgate.net/publication/388739854_A_Patient-Centric_Blockchain_Framework_for_Transparent_and_Secure_Medical_Data_Sharing_Using_Modified_AES"
+    },
+    {
+      title: "Securing Digital Governance: A Deep Learning and Blockchain Framework for Malware Detection in IoT Networks",
+      year: 2024,
+      authors: "Pawar, P. P., Kumar, D., Meesala, M. K., & Shwetha, K. S.",
+      link: "https://www.researchgate.net/publication/388740837_Securing_Digital_Governance_A_Deep_Learning_and_Blockchain_Framework_for_Malware_Detection_in_IoT_Networks"
+    },
+    {
+      title: "Trustworthy IoT Infrastructures: Privacy-Preserving Federated Learning with Efficient Secure Aggregation for Cybersecurity",
+      year: 2024,
+      authors: "Kumar, D., Pawar, P. P., Meesala, M. K., & Shwetha, K. S.",
+      link: "https://www.researchgate.net/publication/388740840_Trustworthy_IoT_Infrastructures_Privacy-Preserving_Federated_Learning_with_Efficient_Secure_Aggregation_for_Cybersecurity"
+    },
+    {
+      title: "Smart Agriculture in the Era of Big Data: IoT-Assisted Pest Forecasting and Resource Optimization for Sustainable Farming",
+      year: 2024,
+      authors: "Kumar, D., Pawar, P. P., Meesala, M. K., & Shwetha, K. S.",
+      link: "https://www.researchgate.net/publication/388743397_Smart_Agriculture_in_the_Era_of_Big_Data_IoT-Assisted_Pest_Forecasting_and_Resource_Optimization_for_Sustainable_Farming"
+    },
+    {
+      title: "Investigation on Digital Forensic Using Graph Based Neural Network With Blockchain Technology",
+      year: 2024,
+      authors: "Pawar, P. P., Kumar, D., Bhujang, R., & Deepika, K. S.",
+      link: "https://www.researchgate.net/publication/384538103_Investigation_on_Digital_Forensic_Using_Graph_Based_Neural_Network_With_Blockchain_Technology"
+    },
+    {
+      title: "SINN Based Federated Learning Model for Intrusion Detection with Blockchain Technology in Digital Forensic",
+      year: 2024,
+      authors: "Pawar, P. P., Kumar, D., Kumar, P., & Deepika, K. S.",
+      link: "https://www.researchgate.net/publication/384543124_SINN_Based_Federated_Learning_Model_for_Intrusion_Detection_with_Blockchain_Technology_in_Digital_Forensic"
+    },
+    {
+      title: "PFCM based Segmentation and TFA based DCNN model for Skin Cancer Classification using Dermoscopic Images",
+      year: 2024,
+      authors: "Pawar, P. P., Kumar, D., Kumar, P., & Manoj, H. M.",
+      link: "https://www.researchgate.net/publication/384548636_PFCM_based_Segmentation_and_TFA_based_DCNN_model_for_Skin_Cancer_Classification_using_Dermoscopic_Images"
+    },
+    {
+      title: "Innovative Horizons in Agricultural Technology with TSA Based StrawberrySqueezeNet Classification Model",
+      year: 2024,
+      authors: "Kumar, D., Pawar, P. P., Kumar, P., & Manoj, H. M.",
+      link: "https://www.researchgate.net/publication/384548880_Innovative_Horizons_in_Agricultural_Technology_with_TSA_based_StrawberrySqueezeNet_Classification_Model"
+    },
+    {
+      title: "Study on Empowering Cyber Security by Using Adaptive Machine Learning Methods",
+      year: 2024,
+      authors: "Gonaygunta, H., Nadella, G. S., Pawar, P. P., & Kumar, D.",
+      link: "https://www.researchgate.net/publication/380771681_Study_on_Empowering_Cyber_Security_by_Using_Adaptive_Machine_Learning_Methods"
+    },
+    {
+      title: "Enhancing Cybersecurity: The Development of a Flexible Deep Learning Model for Enhanced Anomaly Detection",
+      year: 2024,
+      authors: "Gonaygunta, H., Nadella, G. S., Pawar, P. P., & Kumar, D.",
+      link: "https://www.researchgate.net/publication/380772746_Enhancing_Cybersecurity_The_Development_of_a_Flexible_Deep_Learning_Model_for_Enhanced_Anomaly_Detection"
+    },
+    {
+      title: "An Advanced Wasserstein-Enabled Generative Adversarial Network Enabled Attack Detection for Blockchain-Assisted Intelligent Transportation System",
+      year: 2024,
+      authors: "Pawar, P. P., Kumar, D., Ananthan, B., & Surya, R.",
+      link: "https://www.researchgate.net/publication/381934336_An_Advanced_Wasserstein-Enabled_Generative_Adversarial_Network_Enabled_Attack_Detection_for_Blockchain-Assisted_Intelligent_Transportation_System"
+    },
+    {
+      title: "Optimized Support Vector Machine Based Fused IoT Network Security Management",
+      year: 2024,
+      authors: "Kumar, D., Pawar, P. P., Ananthan, B., & Prabhakaran, T. V.",
+      link: "https://www.researchgate.net/publication/381934981_Optimized_Support_Vector_Machine_Based_Fused_IoT_Network_Security_Management"
+    },
+    {
+      title: "Mayfly Optimization Algorithm with Bidirectional Long-Short Term Memory for Intrusion Detection System in Internet of Things",
+      year: 2024,
+      authors: "Pillai, S. V. S., Polimetla, K., Alsalami, Z., & Kumar, D.",
+      link: "https://www.researchgate.net/publication/381395179_Mayfly_Optimization_Algorithm_with_Bidirectional_Long-Short_Term_Memory_for_Intrusion_Detection_System_in_Internet_of_Things"
     }
   ];
 
@@ -665,25 +770,25 @@ export default function Research() {
                   <div className="h-2 w-full bg-gradient-to-r from-green-500 to-teal-500"></div>
                   <div className="p-6">
                     <div className="flex flex-col md:flex-row md:items-start justify-between">
-                      <div>
+                      <div className="flex-grow">
                         <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
-                          {conf.name}
+                          {conf.title}
                         </h3>
-                        <div className="flex flex-wrap gap-x-6 gap-y-2 mb-6">
-                          <div className="flex items-center text-slate-600 dark:text-slate-300">
-                            <Badge className="bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400 mr-3">
-                              {conf.year}
-                            </Badge>
-                            <span className="font-medium">{conf.role}</span>
-                          </div>
-                          <div className="flex items-center text-slate-600 dark:text-slate-300">
-                            <MapPin className="h-4 w-4 text-slate-400 dark:text-slate-500 mr-1.5" />
-                            {conf.location}
-                          </div>
+                        <p className="italic text-slate-600 dark:text-slate-300 mb-2">
+                          {conf.authors}
+                        </p>
+                        <div className="flex items-center mb-4">
+                          <Badge className="bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400">
+                            {conf.year}
+                          </Badge>
                         </div>
-                        <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded-lg text-slate-700 dark:text-slate-300 mb-2">
-                          <span className="font-medium">Topic:</span> {conf.topic}
-                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4 md:mt-0 md:justify-end">
+                        <Button variant="outline" size="sm" className="border-slate-200 dark:border-slate-700 hover:border-green-300 dark:hover:border-green-700">
+                          <a href={conf.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <ExternalLink className="h-3.5 w-3.5 mr-1.5" /> View Paper
+                          </a>
+                        </Button>
                       </div>
                     </div>
                   </div>
