@@ -92,7 +92,7 @@ export default function Hero() {
               <div className="pt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="flex flex-col border border-slate-200 dark:border-slate-800 rounded-lg p-3 hover:bg-slate-50 dark:hover:bg-slate-900/50 transition-colors">
                   <span className="text-sm text-slate-500 dark:text-slate-400">Experience</span>
-                  <span className="text-2xl font-bold text-slate-900 dark:text-white">8+ Years</span>
+                  <span className="text-2xl font-bold text-slate-900 dark:text-white">10+ Years</span>
                 </div>
                 <div className="flex flex-col border border-slate-200 dark:border-slate-800 rounded-lg p-3 hover:bg-slate-50 dark:hover:bg-slate-900/50 transition-colors">
                   <span className="text-sm text-slate-500 dark:text-slate-400">Publications</span>
