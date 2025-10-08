@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, Github, Linkedin, Calendar, MessageSquare } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, MessageSquare } from "lucide-react";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -94,29 +94,6 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-                        <Calendar className="h-6 w-6 text-green-600 dark:text-green-400" />
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="font-bold text-lg text-slate-900 dark:text-white">
-                        Schedule a Meeting
-                      </h3>
-                      <a 
-                        href="https://calendly.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-600 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-                      >
-                        Book a time on my calendar
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                
                 <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 p-6">
                   <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-4">
                     Social Media
@@ -132,7 +109,7 @@ export default function Contact() {
                       <Github className="h-5 w-5" />
                     </a>
                     <a 
-                      href="https://linkedin.com" 
+                      href="https://www.linkedin.com/in/deepak-kumar-tech/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 p-3 rounded-full transition-colors"
