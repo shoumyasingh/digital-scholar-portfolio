@@ -61,10 +61,10 @@ export default function Contact() {
                         Email
                       </h3>
                       <a 
-                        href="mailto:deepak.kumar@example.com" 
+                        href="mailto:deepak.tech@icloud.com" 
                         className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                       >
-                        deepak.kumar@example.com
+                        deepak.tech@icloud.com
                       </a>
                     </div>
                   </div>
@@ -82,10 +82,10 @@ export default function Contact() {
                         Phone
                       </h3>
                       <a 
-                        href="tel:+15551234567" 
+                        href="tel:+14089088074" 
                         className="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                       >
-                        +1 (555) 123-4567
+                        +1 (408) 908-8074
                       </a>
                       <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                         Monday - Friday, 9:00 AM - 5:00 PM PST
