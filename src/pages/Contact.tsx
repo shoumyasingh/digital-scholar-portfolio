@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, Github, Linkedin, MessageSquare } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, MessageSquare } from "lucide-react";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -89,6 +89,24 @@ export default function Contact() {
                       </a>
                       <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                         Monday - Friday, 9:00 AM - 5:00 PM PST
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+                        <MapPin className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <h3 className="font-bold text-lg text-slate-900 dark:text-white">
+                        Office
+                      </h3>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Fremont, California, USA
                       </p>
                     </div>
                   </div>
