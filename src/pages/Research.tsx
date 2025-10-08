@@ -600,8 +600,8 @@ export default function Research() {
             My research explores the intersection of artificial intelligence, human-computer interaction, and distributed systems, with a focus on practical applications.
           </p>
           
-          {/* ORCID ID */}
-          <div className="flex justify-center items-center gap-3 mt-6">
+          {/* ORCID ID & ResearchGate */}
+          <div className="flex flex-wrap justify-center items-center gap-3 mt-6">
             <a 
               href="https://orcid.org/0009-0009-2137-0864"
               target="_blank"
@@ -620,6 +620,21 @@ export default function Research() {
                 ORCID: 0009-0009-2137-0864
               </span>
               <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors" />
+            </a>
+            
+            <a 
+              href="https://www.researchgate.net/profile/Deepak-Kumar-429"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-500 dark:hover:border-teal-500 transition-all shadow-sm hover:shadow-md group"
+            >
+              <svg className="h-5 w-5" viewBox="0 0 32 32" fill="currentColor">
+                <path fill="#00D0AF" d="M19.586 0c4.411 0 7.984 3.573 7.984 7.984v16.031c0 4.411-3.573 7.984-7.984 7.984H3.553C3.244 31.999 3 31.755 3 31.446V0H19.586zM18.742 9.464c-1.835 0-3.323 1.488-3.323 3.323s1.488 3.323 3.323 3.323 3.323-1.488 3.323-3.323-1.488-3.323-3.323-3.323z"/>
+              </svg>
+              <span className="text-slate-700 dark:text-slate-300 font-medium group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                ResearchGate Profile
+              </span>
+              <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors" />
             </a>
           </div>
           
