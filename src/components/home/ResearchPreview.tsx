@@ -2,11 +2,7 @@ import { useState } from "react";
 import { ArrowRight, BookOpen, Lightbulb, Network, Braces } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-
-// Simulating the Link component for this example
-const Link = ({ to, children, className }) => (
-  <a href={to} className={className}>{children}</a>
-);
+import { Link } from "react-router-dom";
 
 export default function ResearchPreview() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
