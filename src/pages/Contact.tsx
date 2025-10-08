@@ -1,35 +1,14 @@
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Github, Linkedin, Calendar, SendIcon, MessageSquare } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Calendar, MessageSquare } from "lucide-react";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
-  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormStatus('submitting');
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus('success');
-      // Reset form after success
-      (e.target as HTMLFormElement).reset();
-      
-      // Reset status after 3 seconds
-      setTimeout(() => {
-        setFormStatus('idle');
-      }, 3000);
-    }, 1500);
-  };
 
   return (
     <Layout>
@@ -67,104 +46,8 @@ export default function Contact() {
 
       {/* Contact content section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Contact form */}
-            <div className={`transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 p-8">
-                <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center">
-                  <SendIcon className="h-6 w-6 text-blue-500 dark:text-blue-400 mr-3" />
-                  Send a Message
-                </h2>
-                
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                        Name
-                      </label>
-                      <Input 
-                        id="name" 
-                        type="text" 
-                        placeholder="Your name" 
-                        required 
-                        className="border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                        disabled={formStatus === 'submitting' || formStatus === 'success'}
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                        Email
-                      </label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="Your email" 
-                        required 
-                        className="border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                        disabled={formStatus === 'submitting' || formStatus === 'success'}
-                      />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Subject
-                    </label>
-                    <Input 
-                      id="subject" 
-                      type="text" 
-                      placeholder="Message subject" 
-                      required 
-                      className="border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                      disabled={formStatus === 'submitting' || formStatus === 'success'}
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Message
-                    </label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Your message" 
-                      rows={6} 
-                      required 
-                      className="border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 placeholder:text-slate-400 dark:placeholder:text-slate-500 resize-none"
-                      disabled={formStatus === 'submitting' || formStatus === 'success'}
-                    />
-                  </div>
-                  
-                  <div>
-                    <Button 
-                      type="submit" 
-                      className={`bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto ${formStatus === 'submitting' ? 'opacity-80 cursor-not-allowed' : ''}`}
-                      disabled={formStatus === 'submitting' || formStatus === 'success'}
-                    >
-                      {formStatus === 'idle' && 'Send Message'}
-                      {formStatus === 'submitting' && 'Sending...'}
-                      {formStatus === 'success' && 'Message Sent!'}
-                      {formStatus === 'error' && 'Try Again'}
-                    </Button>
-                    
-                    {formStatus === 'success' && (
-                      <p className="mt-4 text-sm text-green-600 dark:text-green-400">
-                        Your message has been sent successfully. I'll get back to you as soon as possible.
-                      </p>
-                    )}
-                    
-                    {formStatus === 'error' && (
-                      <p className="mt-4 text-sm text-red-600 dark:text-red-400">
-                        There was an error sending your message. Please try again.
-                      </p>
-                    )}
-                  </div>
-                </form>
-              </div>
-            </div>
-            
-            {/* Contact information */}
-            <div className={`transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className="max-w-4xl mx-auto">
+          <div className={`transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="space-y-6">
                 <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 p-6 hover:shadow-lg transition-shadow">
                   <div className="flex">
@@ -206,26 +89,6 @@ export default function Contact() {
                       </a>
                       <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                         Monday - Friday, 9:00 AM - 5:00 PM PST
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
-                        <MapPin className="h-6 w-6 text-purple-600 dark:text-purple-400" />
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="font-bold text-lg text-slate-900 dark:text-white">
-                        Office
-                      </h3>
-                      <p className="text-slate-600 dark:text-slate-300">
-                        Computer Science Department<br />
-                        Stanford University<br />
-                        Stanford, CA 94305
                       </p>
                     </div>
                   </div>
@@ -279,7 +142,6 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
